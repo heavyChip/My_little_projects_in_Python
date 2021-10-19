@@ -11,11 +11,11 @@ def show_differences_between_sets():
     temp_entered_numbers = pattern.findall(temp_entered_numbers)
 
     entered_numbers_sett = set(map(int, temp_entered_numbers))
-    # print(entered_numbers_sett)
+    #print(entered_numbers_sett)
 
     differences_sett = pattern_sett.difference(entered_numbers_sett)
     #print(list(differences_sett))
 
-    return print(differences_sett)
+    return differences_sett
 
 show_differences_between_sets()
